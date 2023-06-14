@@ -11,19 +11,28 @@ h4 {
   margin-bottom: 0;
 }
 
+ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .list {
-    list-style: none;
+  list-style: none;
 }
 
 .text {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+img {
+  display: block;
+}
 
 .hero {
   background-color: #5c4949;
@@ -35,7 +44,7 @@ h4 {
   background-size: cover;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px){
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .container {
     max-width: 375px;
     padding-left: 20px;
@@ -44,6 +53,8 @@ h4 {
 
   .hero {
     max-width: 375px;
+    padding-top: 395px;
+    padding-bottom: 20px;
   }
 
   .hero-container {
@@ -53,20 +64,59 @@ h4 {
   }
 
   .hero-text {
-    
-
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: -0.03em;
-
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
     color: #ffffff;
   }
 
-
   .hero-button {
     display: flex;
+    margin-bottom: 32px;
+  }
+
+  .buy-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 28px;
+    gap: 14px;
+
+    width: 120px;
+    height: 41px;
+
+    background: #fd9222;
+    border-radius: 100px;
+  }
+
+  .made-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 28px;
+    gap: 14px;
+
+    width: 159px;
+    height: 41px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+  }
+
+  .scroll-btn {
+  }
+
+  .scroll-container {
+    display: flex;
+  }
+
+  .hero-svg {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
   }
 }
