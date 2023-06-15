@@ -61,6 +61,8 @@ img {
   }
 
   .hero-title {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .hero-text {
@@ -77,6 +79,7 @@ img {
   .hero-button {
     display: flex;
     margin-bottom: 32px;
+    column-gap: 14px;
   }
 
   .buy-btn {
@@ -85,10 +88,14 @@ img {
     align-items: flex-start;
     padding: 12px 28px;
     gap: 14px;
-
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'Montserrat';
+    color: #ffffff;
     width: 120px;
     height: 41px;
-
+    
     background: #fd9222;
     border-radius: 100px;
   }
@@ -108,15 +115,18 @@ img {
   }
 
   .scroll-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
   }
 
   .scroll-container {
     display: flex;
+    align-items: center;
+    column-gap: 12px;
   }
 
   .hero-svg {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
+    width: 12px;
   }
 }
