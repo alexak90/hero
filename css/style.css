@@ -1,5 +1,5 @@
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 p,
@@ -26,8 +26,8 @@ ul {
 }
 
 .container {
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img {
@@ -43,18 +43,18 @@ img {
   margin: auto;
   background-repeat: no-repeat;
   background-position: center;
-
+  border-radius: 30px;
   background-size: cover;
 }
 
 .buy-btn {
   display: flex;
-
+  border: none;
   column-gap: 14px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   
   align-items: center;
@@ -74,16 +74,14 @@ img {
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  
-
   background-color: transparent;
   border: 1px solid #ffffff;
   border-radius: 100px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.21;
 }
 
 .hero-link:hover,
@@ -92,16 +90,44 @@ img {
   color: #fd9222;
 }
 
+
+.hero-scroll-link {
+  display: flex;
+  column-gap: 14px;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+
+  letter-spacing: -0.03em;
+
+  color: #ffffff;
+}
+
+
 .hero-scroll-link:hover,
 .hero-scroll-link:focus {
   color: #fd9222;
+  
 }
 
-.hero-scroll-btn:hover,
-.hero-scroll-btn:focus {
-  background-color: #fd9222;
+.hero-scroll-link:hover .hero-scroll-btn,
+.hero-scroll-link:focus .hero-scroll-btn {
   fill: #ffffff;
 }
+
+.hero-scroll-btn {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: currentColor;
+  fill: #fd9222;
+
+}
+
 
 /* --------------------------------------------------------------------------------- */
 
@@ -156,7 +182,7 @@ img {
   }
 
   .hero-text {
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -168,7 +194,7 @@ img {
 
   .hero-button {
     display: flex;
-    margin-bottom: 32px;
+    
     column-gap: 14px;
     align-items: center;
     flex-wrap: wrap;
@@ -192,12 +218,7 @@ img {
   .hero-scroll-btn {
     width: 28px;
     height: 28px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    fill: #fd9222;
+   
   }
 
   .scroll-container {
@@ -212,20 +233,6 @@ img {
     padding-bottom: 10px;
   }
 
-  .hero-scroll-link {
-    display: flex;
-    column-gap: 14px;
-    align-items: center;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.29;
-
-    letter-spacing: -0.03em;
-
-    color: #ffffff;
-  }
 
   .hero-svg {
     width: 12px;
@@ -272,12 +279,20 @@ img {
     width: 768px;
   }
 
+  .hero-text {
+    max-width: 484px;
+  }
+
   .hero-title {
     padding: 671px 40px 40px 40px;
   }
 
   .hero-link {
     column-gap: 153px;
+  }
+
+  .hero-scroll-link {
+    margin-left: 142px;
   }
 }
 
@@ -308,6 +323,17 @@ img {
   .buy-btn, .hero-link {
     padding: 14px 40px;
 
+  }
+
+  .hero-scroll-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+
+  .hero-svg {
+    width: 16px;
+    height: 16px;
   }
 }
 
