@@ -39,6 +39,17 @@ img {
   margin-right: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0);
+}
+
 .hero-title {
   margin: auto;
   background-repeat: no-repeat;
@@ -175,10 +186,7 @@ img {
   }
 
   .hero-title {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 395px;
-    padding-bottom: 20px;
+    padding: 395px 20px 20px 20px;
   }
 
   .hero-text {
@@ -279,9 +287,6 @@ img {
     width: 768px;
   }
 
-  .hero-text {
-    max-width: 484px;
-  }
 
   .hero-title {
     padding: 670px 40px 40px 40px;
@@ -312,8 +317,10 @@ img {
     letter-spacing: -0.03em;
     color: #ffffff;
     margin-bottom: 32px;
+    max-width: 484px;
   }
 
+ 
   .hero-button {
     display: flex;
     align-items: center;
@@ -369,5 +376,15 @@ img {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+
+  .hero-title {
+    padding: 380px 40px 40px 40px;
+  }
+
+
+
+  .hero-scroll-link {
+    margin-left: 577px;
   }
 }
